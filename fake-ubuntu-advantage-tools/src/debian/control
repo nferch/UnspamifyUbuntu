@@ -1,0 +1,18 @@
+Source: fake-ubuntu-advantage-tools
+Section: unknown
+Priority: optional
+Maintainer: Originally by Vitaly _Vi Shukela <vi0oss@gmail.com>, this one updated by Skye with fix idea by gamemanj
+Build-Depends: debhelper-compat (= 12)
+Standards-Version: 4.4.1
+Homepage: https://github.com/Skyedra/UnspamifyUbuntu
+Vcs-Browser: https://github.com/Skyedra/UnspamifyUbuntu
+Vcs-Git: https://github.com/Skyedra/UnspamifyUbuntu.git
+
+Package: fake-ubuntu-advantage-tools
+Architecture: all
+Depends: ${misc:Depends}
+Conflicts: ubuntu-advantage-tools, ubuntu-advantage-desktop-daemon
+Breaks: ubuntu-advantage-tools, ubuntu-advantage-desktop-daemon
+Provides: ubuntu-advantage-tools (= 65535:65535), ubuntu-advantage-desktop-daemon (= 65535:65535)
+Description: fake ubuntu-advantage-tools
+ Ban ubuntu-advantage-tools while satisfying ubuntu-minimal dependency
